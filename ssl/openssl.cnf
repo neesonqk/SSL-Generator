@@ -10,8 +10,8 @@ private_key = $dir/private/cakey.pem
 serial = $dir/serial                                       
 
 default_crl_days = 7                                       
-default_days = 365                                         
-default_md = sha1                                          
+default_days = 36500                                         
+default_md = sha256                                          
 
 policy = testca_policy                                     
 x509_extensions = certificate_extensions                   
@@ -28,7 +28,7 @@ organizationalUnitName = optional
 basicConstraints = CA:false                                
 
 [ req ]                                                    
-default_bits = 2048                                        
+default_bits = 4096                                        
 default_keyfile = ./private/cakey.pem                      
 default_md = sha1                                          
 prompt = yes                                               
